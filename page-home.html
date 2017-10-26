@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+		<link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" crossorigin>
+		<link rel="preload"		 href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" as="font" crossorigin>
+		<link rel="preload"		 href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" as="style" crossorigin>
+		<link rel="preload"		 href="./css/uikit-bootstrap.css" as="style">
+		<link rel="preload"		 href="./img/govicon-white.svg" as="image">
+		<!--
+			Tip:
+			Preload resources you have high-confidence will be used in the current page.
+			Prefetch resources likely to be used for future navigations across multiple navigation boundaries.
+		-->
+		<title>Homepage - UI-Kit Bootstrap</title>
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+		<link rel="manifest" href="./favicons/manifest.json">
+		<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#146577">
+		<link rel="shortcut icon" href="./favicons/favicon.ico">
+		<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Bootstrap core CSS, inclues glyphicons -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome, for social icons -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Open Sans from Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+		<!-- Styles for this theme -->
+		<link href="./css/uikit-bootstrap.css" rel="stylesheet">
+	</head>
+
+	<body class="">
+		<div class="container-fluid skiplink text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#content" class="sr-only sr-only-focusable" id="skippy">
+						<span class="skiplink-text">Skip to main content</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<header class="navbar">
+			<div class="container vcenter">
+				<div class="row">
+					<div class="col-md-8 col-sm-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-white.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<form class="input-group">
+							<input class="form-control" placeholder="Search for&hellip;" type="text" title="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"
+												title="Awkward&hellip; this doesn&apos;t actually search, it&apos;s just a demo.">
+									<i class="glyphicon glyphicon-search"></i>
+									<span class="sr-only">Search</span>
+								</button>
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-menu-2" aria-expanded="false" aria-controls="demo-menu-2">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="demo-menu-2">
+							<ul class="nav navbar-nav nav-tabs nav-justified">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">View on GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar hero light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						 <h1 class="brand-heading CoT-ignore">
+							 Welcome to govCMS8
+						 </h1>
+					</div>
+					<div class="col-md-12">
+						<p class="tagline">
+							Running on the shiny, new, Drupal 8!
+						</p>
+						<p>
+							Obviously, it's no WordPress though&hellip; 😛
+						</p>
+						<p>
+							<a class="cta-link" href="#">Call to action</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" role="main">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Blog Posts</h2>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">
+								<a href="#">A post about cat videos</a>
+							</h4>
+							<p>
+								<small class="meta">by Tim Hurley</small>
+								<span class="label label-primary">cats</span>
+								<span class="label label-primary">lil moew moew</span>
+							</p>
+							<p class="list-group-item-text">Don't freak out - but there are cat videos on the internet now! This breaking news was first discovered when&hellip;</p>
+						</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">
+								<a href="#">Another post</a>
+							</h4>
+							<p>
+								<small class="meta">by Tim Hurley</small>
+								<span class="label label-primary">random</span>
+							</p>
+							<p class="list-group-item-text">This is a text snippet from the post. Make sure html isn't rendered in here (eg &lt;b&gt;bold&lt;/b&gt;). Eventually this will trail off, like so&hellip;</p>
+						</li>
+						<li class="list-group-item">
+							<h4 class="list-group-item-heading">
+								<a href="#">Yet another post!</a>
+							</h4>
+							<p>
+								<small class="meta">by Tim Hurley</small>
+								<span class="label label-primary">random</span>
+							</p>
+							<p class="list-group-item-text">This is a text snippet from the post. Make sure html isn't rendered in here. Eventually this will trail off, like so&hellip;</p>
+						</li>
+					</ul>
+					<a class="cta-link" href="#">See all posts</a>
+				</div>
+
+				<div class="col-md-6">
+					<h2>Latest News</h2>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img alt="128x128" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=8&bg=efefef&txtclr=333333&txt=128%C3%97128&w=128&h=128" srcset="https://placeholdit.imgix.net/~text?txtsize=25&bg=efefef&txtclr=333333&txt=HiDPI%20of%20128&w=256&h=256 2x">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">Linked news heading</a></h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img alt="128x128" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=8&bg=efefef&txtclr=333333&txt=128%C3%97128&w=128&h=128" srcset="https://placeholdit.imgix.net/~text?txtsize=25&bg=efefef&txtclr=333333&txt=HiDPI%20of%20128&w=256&h=256 2x">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">Linked news heading</a></h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img alt="128x128" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=8&bg=efefef&txtclr=333333&txt=128%C3%97128&w=128&h=128" srcset="https://placeholdit.imgix.net/~text?txtsize=25&bg=efefef&txtclr=333333&txt=HiDPI%20of%20128&w=256&h=256 2x">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">Linked news heading</a></h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+						</div>
+					</div>
+					<a class="cta-link" href="#">See all news</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Events</h2>
+					<ul class="calendar-list">
+						<li class="calendar-item calendar-item-past">
+							<time class="calendar-date" datetime="2017-04-14">
+								Thu
+								<span class="calendar-number">13</span>
+								Apr
+							</time>
+							<div class="calendar-title">
+								A Past Event
+								<span class="calendar-note">This is a note about this specific calendar event.</span>
+							</div>
+						</li>
+						<li class="calendar-item">
+							<time class="calendar-date" datetime="2017-04-14">
+								Fri
+								<span class="calendar-number">14</span>
+								Apr
+							</time>
+							<div class="calendar-title">
+								Good Friday
+							</div>
+						</li>
+						<li class="calendar-item">
+							<time class="calendar-date" datetime="2017-04-15">
+								Sat
+								<span class="calendar-number">15</span>
+								Apr
+							</time>
+							<div class="calendar-title">
+								Easter Saturday
+								<span class="calendar-note">This is a note about this specific calendar event.</span>
+							</div>
+						</li>
+						<li class="calendar-item calendar-item-current">
+							<time class="calendar-date" datetime="2017-04-14">
+								Mon
+								<span class="calendar-number">21</span>
+								Sep
+							</time>
+							<div class="calendar-title">
+								A Current Event Right Now
+								<span class="calendar-note">This is a note about this specific calendar event.</span>
+							</div>
+						</li>
+						<li class="calendar-item">
+							<time class="calendar-date" datetime="2017-04-15">
+								Sun
+								<span class="calendar-number">25</span>
+								Nov
+							</time>
+							<div class="calendar-title">
+								<a href="#">A Linked, Upcoming Event</a>
+								<span class="calendar-note">This is a note about this specific calendar event.</span>
+							</div>
+						</li>
+					</ul>
+					<a class="cta-link" href="#">See all events</a>
+				</div>
+
+				<div class="col-md-6">
+					<h2>Current Vacancies</h2>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<h4 class="list-group-item-heading">
+									<a href="#">Job Title</a>
+								</h4>
+								<p>
+									<small class="meta">Closes in 1 days</small>
+								</p>
+								<p>
+									<span class="label label-beta">Non-ongoing</span>
+									<span class="label label-default">Level</span>
+									<span class="label label-primary">NSW</span>
+								</p>
+								<p class="list-group-item-text">Description goes here.</p>
+							</li>
+							<li class="list-group-item">
+								<h4 class="list-group-item-heading">
+									<a href="#">Job Title</a>
+								</h4>
+								<p>
+									<small class="meta">Closes in 3 days</small>
+								</p>
+								<p>
+									<span class="label label-beta">Full-time</span>
+									<span class="label label-default">Level</span>
+									<span class="label label-primary">ACT</span>
+								</p>
+								<p class="list-group-item-text">Description goes here.</p>
+							</li>
+							<li class="list-group-item">
+								<h4 class="list-group-item-heading">
+									<a href="#">Job Title</a>
+								</h4>
+								<p>
+									<small class="meta">Closes in 8 days</small>
+								</p>
+								<p>
+									<span class="label label-beta">Part-time</span>
+									<span class="label label-default">Level</span>
+									<span class="label label-primary">ACT</span>
+								</p>
+								<p class="list-group-item-text">Description goes here.</p>
+							</li>
+						</ul>
+					<a class="cta-link" href="#">See all vacancies</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Latest Tweet</h2>
+					<div class="jumbotron">
+						<h3>
+							<i class="fa fa-twitter"></i>
+							<a href="#">@AusGovCMS</a>
+						</h3>
+						<small class="meta"><time  datetime="2006-09-24T05:00-07:00">5 hours ago</time></small>
+						<p class="highlight-link">
+							Congrats to our <a href="#">#govCMS</a> friends <a href="#">#envirogov</a> &amp; <a href="#">@doghouseagency</a> on their <a href="#">#AcquiaEngage</a> Award for Public Sector overnight <a href="#">#AusGovIT</a>
+						</p>
+					</div>
+					<a class="cta-link" href="#">View our Twitter profile</a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<h1 class="sr-only">Footer links</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="./img/coas.svg" alt="Australian Government Coat of Arms" width="163" />
+					</div>
+					<div class="col-md-9">
+						<ul class="list-inline">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+						<small>
+							&copy; Commonwealth of Australia
+						</small>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

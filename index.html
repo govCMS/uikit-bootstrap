@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+		<link rel="preload"		 href="./css/uikit-bootstrap.css" as="style">
+		<link rel="preload"		 href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" as="style">
+		<link rel="preload"		 href="./img/govicon-white.svg" as="image">
+		<!--
+			Tip:
+			Preload resources you have high-confidence will be used in the current page.
+			Prefetch resources likely to be used for future navigations across multiple navigation boundaries.
+
+			More info:
+			https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/
+
+			Issue:
+			Only supported by Chrome atm (http://caniuse.com/#feat=link-rel-preload)
+			and it seems external stylesheets are being loaded twice. ¯\_(ツ)_/¯
+		-->
+		<title>UI-Kit Bootstrap</title>
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+		<link rel="manifest" href="./favicons/manifest.json">
+		<link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#146577">
+		<link rel="shortcut icon" href="./favicons/favicon.ico">
+		<meta name="msapplication-config" content="./favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Bootstrap core CSS, inclues glyphicons -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Font Awesome, for social icons -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Open Sans from Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+
+		<!-- Styles for this theme -->
+		<link href="./css/uikit-bootstrap.css" rel="stylesheet">
+
+		<!-- Styles for this demo - YOU DON'T NEED THIS -->
+		<link href="./css/demo.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container-fluid skiplink text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#content-jump" class="sr-only sr-only-focusable" id="skippy">
+						<span class="skiplink-text">Skip to main content</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<header class="navbar">
+			<div class="container">
+				<div class="row vcenter">
+					<div class="col-md-6 col-xs-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-white.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="main-menu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="main-menu">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="message.html">Message</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="jumbotron">
+			<div class="container" id="about">
+				<h2>
+					DTA UI-Kit Bootstrap Theme
+				</h2>
+				<p>
+					A drop-in Bootstrap v3 stylesheet in the style of the Australian Government DTA's <a href="https://gov-au-ui-kit.apps.staging.digital.gov.au/">UI-Kit</a>.
+				</p>
+				<small class="meta">
+					Last updated:
+					<time datetime="2017-09-12">October 2017</time>
+				</small>
+			</div>
+		</div>
+
+		<div class="container" role="main">
+			<div class="row">
+				<div class="demo-ToC col-md-12">
+					<!--
+						JS will populate this,
+						...because basically, I'm too lazy (🤔 efficient? 😛) to actually create the anchors in the content..
+					-->
+				</div>
+			</div>
+
+			<div class="page-header" id="content-jump">
+				<h1>Header options</h1>
+			</div>
+			<h2>Small site</h2>
+			<small>With small navigation beside and no search.</small>
+		</div> <!-- container -->
+
+		<header class="navbar">
+			<div class="container">
+				<div class="row vcenter">
+					<div class="col-md-6 col-xs-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-white.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-menu-1" aria-expanded="false" aria-controls="demo-menu-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="demo-menu-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">View on GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="container" role="main">
+			<h2>Header search</h2>
+			<small>With full width navigation below.</small>
+		</div>
+
+		<header class="navbar">
+			<div class="container vcenter">
+				<div class="row">
+					<div class="col-md-8 col-sm-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-white.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<form class="input-group">
+							<input class="form-control" placeholder="Search for&hellip;" type="text" title="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"
+												title="Awkward&hellip; this doesn&apos;t actually search, it&apos;s just a demo.">
+									<i class="glyphicon glyphicon-search"></i>
+									<span class="sr-only">Search</span>
+								</button>
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-menu-2" aria-expanded="false" aria-controls="demo-menu-2">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="demo-menu-2">
+							<ul class="nav navbar-nav nav-tabs nav-justified">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">View on GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<h2>Full header branding</h2>
+			<small>With navigation and search underneath.</small>
+		</div> <!-- container -->
+
+		<header class="navbar">
+			<div class="container">
+				<div class="row vcenter">
+					<div class="col-md-6 col-sm-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-white.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<p class="tagline text-right">
+							With a really long tagline &mdash; leaving no room for anything else.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-menu-3" aria-expanded="false" aria-controls="demo-menu-3">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="demo-menu-3">
+							<ul class="nav navbar-nav nav-tabs nav-justified">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Link</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">View on GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+					<div class="col-md-3">
+						<form class="input-group">
+							<input class="form-control" placeholder="Search for&hellip;" type="text" title="Search">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"
+												title="Awkward&hellip; this doesn&apos;t actually search, it&apos;s just a demo.">
+									<i class="glyphicon glyphicon-search"></i>
+									<span class="sr-only">Search</span>
+								</button>
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Light header</h2>
+		</div> <!-- container -->
+
+		<header class="navbar light">
+			<div class="container">
+				<div class="row vcenter">
+					<div class="col-md-6 col-xs-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-dark.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-menu-4" aria-expanded="false" aria-controls="demo-menu-4">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="demo-menu-4">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">View on GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+		<div class="container">
+			<h2>Dark header</h2>
+		</div> <!-- container -->
+
+		<header class="navbar dark">
+			<div class="container">
+				<div class="row vcenter">
+					<div class="col-md-6 col-xs-12">
+						<div class="navbar-header">
+							 <a href="/" class="brand navbar-left has-img vcenter">
+								 <img src="./img/govicon-white.svg" alt="logo" height="70">
+								 <h1 class="brand-heading style-line CoT-ignore">
+									 UI-Kit Bootstrap
+									 <span class="label">beta</span>
+								 </h1>
+							 </a>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-menu-5" aria-expanded="false" aria-controls="demo-menu-5">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<nav class="navbar-collapse collapse" id="demo-menu-5">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="/">Home</a></li>
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">Nav header</li>
+										<li><a href="#">Separated link</a></li>
+										<li><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li><a href="https://github.com/govCMS/uikit-bootstrap">View on GitHub</a></li>
+							</ul>
+						</nav><!--/.nav-collapse -->
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+		<div class="container">
+			<h2>&quot;Hero&quot; headers</h2>
+			<small>
+				<em>Now with twice as much padding as our nearest competitor!</em> <br>
+				It&apos;s like Jumbotron, for headers.
+			</small>
+		</div> <!-- container -->
+
+		<div class="navbar hero">
+			<div class="container">
+				<div class="row"> <!-- no vcenter on this one -->
+					<div class="col-md-12">
+						<h1 class="brand-heading CoT-ignore">
+						 UI-Kit Bootstrap
+						</h1>
+						<p class="tagline">
+							Ideally with a simple heading and a tagline here.
+						</p>
+						<p>
+							Some optional, slightly smaller text here.
+						</p>
+						<p>
+							<a class="cta-link" href="#">Call to action</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="navbar hero light">
+			<div class="container">
+				<div class="row"> <!-- no vcenter on this one -->
+					<div class="col-md-12">
+						<h1 class="brand-heading CoT-ignore">
+						 UI-Kit Bootstrap
+						</h1>
+						<p class="tagline">
+							Ideally with a simple heading and a tagline here.
+						</p>
+						<p>
+							Some optional, slightly smaller text here. Can be header or div.
+						</p>
+						<p>
+							<a class="cta-link" href="#">Call to action</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="navbar hero dark">
+			<div class="container">
+				<div class="row"> <!-- no vcenter on this one -->
+					<div class="col-md-12">
+						<h1 class="brand-heading CoT-ignore">
+						 UI-Kit Bootstrap
+						</h1>
+						<p class="tagline">
+							Ideally with a simple heading and a tagline here.
+						</p>
+						<p>
+							Some optional, slightly smaller text here.
+						</p>
+						<p>
+							<a class="cta-link" href="#">Call to action</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="container" role="main">
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h1>Headings</h1>
+					</div>
+					<h1 class="CoT-ignore">
+						Heading 1
+					</h1>
+					<h2>
+						Heading 2
+					</h2>
+					<h3>
+						Heading 3
+					</h3>
+					<h4>
+						Heading 4
+					</h4>
+					<h5>
+						Heading 5
+					</h5>
+					<h6>
+						Heading 6
+					</h6>
+
+					<p>
+						Paragraph text here. Paragraph inline <a href="#">link</a> here. Paragraph text here. Paragraph text here. <a href="https://www.w3.org/WAI/intro/aria" rel="external">an external link</a>.
+					</p>
+
+					<h1 class="CoT-ignore">
+						Heading 1 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</h1>
+					<h2>
+						Heading 2 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</h2>
+					<h3>
+						Heading 3 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</h3>
+					<h4>
+						Heading 4 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</h4>
+					<h5>
+						Heading 5 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</h5>
+					<h6>
+						Heading 6 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</h6>
+					<p>
+						Paragraph text that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.
+					</p>
+					<p>
+						<del datetime="2017-08-04">this text has been deleted</del> <br>
+						<ins datetime="2017-08-04">this text has been inserted</ins>	<br>
+						<s>this text is no longer accurate/relevant</s> <br>
+						<samp>sample text</samp>	<br>
+						<mark>mark text</mark> <br>
+						<var>varName</var> = 0 <br>
+						<data value="123456789">Data attr</data> <br>
+						<sub>sub</sub> text <sup>sup</sup> text <br>
+					</p>
+
+					<br>
+
+					<h1 class="CoT-ignore">
+						<a href="#">Linked heading 1 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</h1>
+					<h2>
+						<a href="#">Linked heading 2 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</h2>
+					<h3>
+						<a href="#">Linked heading 3 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</h3>
+					<h4>
+						<a href="#">Linked heading 4 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</h4>
+					<h5>
+						<a href="#">Linked heading 5 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</h5>
+					<h6>
+						<a href="#">Linked heading 6 that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</h6>
+					<p>
+						<a href="#">Linked paragraph text that is far to long and therefore wraps over multiple lines, testing whether the line height has been set to something appropriate or not.</a>
+					</p>
+				</div>
+			</div>
+
+
+			<div class="page-header">
+				<h1>Buttons</h1>
+				<small>Apparently only default and primary should be used though&hellip;</small>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>
+						<button type="button" class="btn btn-lg btn-default">Default</button>
+						<button type="button" class="btn btn-lg btn-primary">Primary</button>
+						<button type="button" class="btn btn-lg btn-success">Success</button>
+						<button type="button" class="btn btn-lg btn-info">Info</button>
+						<button type="button" class="btn btn-lg btn-warning">Warning</button>
+						<button type="button" class="btn btn-lg btn-danger">Danger</button>
+						<button type="button" class="btn btn-lg btn-link">Link</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-default">Default</button>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-sm btn-default">Default</button>
+						<button type="button" class="btn btn-sm btn-primary">Primary</button>
+						<button type="button" class="btn btn-sm btn-success">Success</button>
+						<button type="button" class="btn btn-sm btn-info">Info</button>
+						<button type="button" class="btn btn-sm btn-warning">Warning</button>
+						<button type="button" class="btn btn-sm btn-danger">Danger</button>
+						<button type="button" class="btn btn-sm btn-link">Link</button>
+					</p>
+					<p>
+						<button type="button" class="btn btn-xs btn-default">Default</button>
+						<button type="button" class="btn btn-xs btn-primary">Primary</button>
+						<button type="button" class="btn btn-xs btn-success">Success</button>
+						<button type="button" class="btn btn-xs btn-info">Info</button>
+						<button type="button" class="btn btn-xs btn-warning">Warning</button>
+						<button type="button" class="btn btn-xs btn-danger">Danger</button>
+						<button type="button" class="btn btn-xs btn-link">Link</button>
+					</p>
+					<h2>Button groups</h2>
+					<div class="btn-group" role="group" aria-label="&hellip;">
+						<button type="button" class="btn btn-default">Left</button>
+						<button type="button" class="btn btn-default">Middle</button>
+						<button type="button" class="btn btn-default">Right</button>
+					</div>
+					<h2>Disabled state</h2>
+					<p>
+						<button disabled type="button" class="btn btn-default">Default</button>
+						<button disabled type="button" class="btn btn-primary">Primary</button>
+						<button disabled type="button" class="btn btn-success">Success</button>
+						<button disabled type="button" class="btn btn-info">Info</button>
+						<button disabled type="button" class="btn btn-warning">Warning</button>
+						<button disabled type="button" class="btn btn-danger">Danger</button>
+						<button disabled type="button" class="btn btn-link">Link</button>
+					</p>
+					<h2><abbr title="Call to action">CTA</abbr> link</h2>
+					<a class="cta-link" href="#">Sign up</a>
+				</div>
+			</div> <!-- row -->
+
+
+			<div class="page-header">
+				<h1>Jumbotron</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="jumbotron">
+						<h1 class="CoT-ignore">Heading</h1>
+						<p>Main jumbotron for a primary marketing message or call to action.</p>
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					</div>
+				</div>
+			</div> <!-- row -->
+
+			<div class="page-header">
+				<h1>Tables</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Steve</td>
+								<td>Jobs</td>
+								<td>@apple</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Bob</td>
+								<td>Jane</td>
+								<td>@tyres</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div> <!-- row -->
+
+			<div class="page-header">
+				<h1>Images</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&bg=efefef&txtclr=333333&txt=200%C3%97200&w=200&h=200" class="img-rounded" alt="demo image">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&bg=efefef&txtclr=333333&txt=200%C3%97200&w=200&h=200" class="img-circle" alt="demo image">
+					<img src="https://placeholdit.imgix.net/~text?txtsize=19&bg=efefef&txtclr=333333&txt=200%C3%97200&w=200&h=200" class="img-thumbnail" alt="demo image">
+				</div>
+			</div> <!-- row -->
+
+			<div class="page-header">
+				<h1>Cards (advanced thumbnails)</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<img alt="image" src="https://placeholdit.imgix.net/~text?txtsize=50&bg=efefef&txtclr=333333&txt=image+&w=600&h=400&txttrack=0">
+						<div class="caption">
+							<h3>Thumbnail label</h3>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p>
+								<a href="#" class="btn btn-primary" role="button">Button</a>
+								<a href="#" class="btn btn-default" role="button">Button</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-5">
+					<div class="thumbnail">
+						<img alt="image" src="https://placeholdit.imgix.net/~text?txtsize=50&bg=efefef&txtclr=333333&txt=image+&w=744&h=400&txttrack=0">
+						<div class="caption">
+							<h3><a href="#">Thumbnail label link</a></h3>
+							<small>Subtext for header, eg meta info text</small>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							<p>
+								<a href="#" class="btn btn-primary" role="button">Button</a>
+								<a href="#" class="btn btn-default" role="button">Button</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- row -->
+		</div> <!-- container -->
+
+
+		<div class="coloured-background">
+			<div class="container">
+					<div class="page-header">
+						<h2>With a coloured background</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<div class="thumbnail">
+								<img alt="image" src="https://placeholdit.imgix.net/~text?txtsize=50&bg=efefef&txtclr=333333&txt=image+&w=600&h=400&txttrack=0">
+								<div class="caption">
+									<h3>Thumbnail label</h3>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p>
+										<a href="#" class="btn btn-primary" role="button">Button</a>
+										<a href="#" class="btn btn-default" role="button">Button</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-5">
+							<div class="thumbnail">
+								<img alt="image" src="https://placeholdit.imgix.net/~text?txtsize=50&bg=efefef&txtclr=333333&txt=image+&w=744&h=400&txttrack=0">
+								<div class="caption">
+									<h3><a href="#">Thumbnail label link</a></h3>
+									<small>Subtext for header, eg meta info text</small>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+									<p>
+										<a href="#" class="btn btn-primary" role="button">Button</a>
+										<a href="#" class="btn btn-default" role="button">Button</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div> <!-- /container -->
+		</div>
+
+
+
+		<div class="container">
+			<div class="page-header">
+				<h1>Media object</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="media">
+						<div class="media-left">
+							<img alt="64x64" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=8&bg=efefef&txtclr=333333&txt=64%C3%9764&w=64&h=64" srcset="https://placeholdit.imgix.net/~text?txtsize=15&bg=efefef&txtclr=333333&txt=HiDPI%20of%2064&w=128&h=128 2x">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Media heading</h4>
+							Cras sit amet nibh libero, in <a href="#">inline link</a> gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img alt="128x128" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=8&bg=efefef&txtclr=333333&txt=128%C3%97128&w=128&h=128" srcset="https://placeholdit.imgix.net/~text?txtsize=25&bg=efefef&txtclr=333333&txt=HiDPI%20of%20128&w=256&h=256 2x">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">Linked Media heading</a></h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4">
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img alt="256x256" class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=8&bg=efefef&txtclr=333333&txt=256%C3%97256&w=256&h=256" srcset="https://placeholdit.imgix.net/~text?txtsize=40&bg=efefef&txtclr=333333&txt=HiDPI%20of%20256&w=512&h=512 2x">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Media heading</h4>
+							Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="page-header">
+				<h1>Social icons</h1>
+				<small>
+					For follow and sharing links <br>
+					<a href="https://bigmedium.com/ideas/no-mobile-share-buttons.html">Note about usage</a>.<br>
+					Requires Font Awesome (or similar), as glyphicons doesn't include all required icons.
+				</small>
+			</div>
+			<h2>Circle &mdash; Icons only</h2>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-media-links-circle">
+						<li>
+							<a title="Like UI-Kit Bootstrap on Facebook" data-toggle="tooltip" data-placement="top" href="https://facebook.com/UI-Kit Bootstrap">
+								<span class="sr-only">Like UI-Kit Bootstrap on Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Dribbble" data-toggle="tooltip" data-placement="top" href="https://dribbble.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Dribbble</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Pinterest" data-toggle="tooltip" data-placement="top" href="https://pinterest.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Pinterest</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Google Plus" data-toggle="tooltip" data-placement="top" href="https://plus.google.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Google Plus</span>
+							</a>
+						</li>
+						<li>
+							<a title="View UI-Kit Bootstrap on GitHub" data-toggle="tooltip" data-placement="top" href="https://github.com/UI-Kit Bootstrap">
+								<span class="sr-only">View UI-Kit Bootstrap on GitHub</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Tumblr" data-toggle="tooltip" data-placement="top" href="https://tumblr.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Tumblr</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on YouTube" data-toggle="tooltip" data-placement="top" href="https://youtube.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on YouTube</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Flickr" data-toggle="tooltip" data-placement="top" href="https://flickr.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Flickr</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Vimeo" data-toggle="tooltip" data-placement="top" href="https://vimeo.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Vimeo</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Instagram" data-toggle="tooltip" data-placement="top" href="https://instagram.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on CodePen" data-toggle="tooltip" data-placement="top" href="https://codepen.io/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on CodePen</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on LinkedIn" data-toggle="tooltip" data-placement="top" href="https://linkedin.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Twitter" data-toggle="tooltip" data-placement="top" href="https://twitter.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Twitter</span>
+							</a>
+						</li>
+						<li>
+							<a title="View UI-Kit Bootstrap on WordPress.org" data-toggle="tooltip" data-placement="top" href="https://wordpress.org/UI-Kit Bootstrap">
+								<span class="sr-only">View UI-Kit Bootstrap on WordPress.org</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on WordPress.com" data-toggle="tooltip" data-placement="top" href="https://wordpress.com/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on WordPress.com</span>
+							</a>
+						</li>
+						<li>
+							<a title="Follow UI-Kit Bootstrap on Drupal.org" data-toggle="tooltip" data-placement="top" href="https://drupal.org/UI-Kit Bootstrap">
+								<span class="sr-only">Follow UI-Kit Bootstrap on Drupal.org</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Inline &mdash; Icons with text</h2>
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="social-media-links list-unstyled">
+						<li>
+							<a href="https://facebook.com/UI-Kit Bootstrap">Facebook</a>
+						</li>
+						<li>
+							<a href="https://dribbble.com/UI-Kit Bootstrap">Dribbble</a>
+						</li>
+						<li>
+							<a href="https://pinterest.com/UI-Kit Bootstrap">Pinterest</a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/UI-Kit Bootstrap">Google Plus</a>
+						</li>
+						<li>
+							<a href="https://github.com/UI-Kit Bootstrap">GitHub</a>
+						</li>
+						<li>
+							<a href="https://tumblr.com/UI-Kit Bootstrap">Tumblr</a>
+						</li>
+						<li>
+							<a href="https://youtube.com/UI-Kit Bootstrap">YouTube</a>
+						</li>
+						<li>
+							<a href="https://flickr.com/UI-Kit Bootstrap">Flickr</a>
+						</li>
+						<li>
+							<a href="https://vimeo.com/UI-Kit Bootstrap">Vimeo</a>
+						</li>
+						<li>
+							<a href="https://instagram.com/UI-Kit Bootstrap">Instagram</a>
+						</li>
+						<li>
+							<a href="https://codepen.io/UI-Kit Bootstrap">CodePen</a>
+						</li>
+						<li>
+							<a href="https://linkedin.com/UI-Kit Bootstrap">LinkdIn</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/UI-Kit Bootstrap">Twitter</a>
+						</li>
+						<li>
+							<a href="https://wordpress.org/UI-Kit Bootstrap">WordPress.org</a>
+						</li>
+						<li>
+							<a href="https://wordpress.com/UI-Kit Bootstrap">WordPress.com</a>
+						</li>
+						<li>
+							<a href="https://drupal.org/UI-Kit Bootstrap">Drupal.org</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="page-header">
+				<h1>Dashboard</h1>
+				<!-- icons: http://getbootstrap.com/components/ -->
+				<small>
+					Remeber to keep the text minimal! <br>
+					Can be used with any icon font. Demo shows with both <a href="http://getbootstrap.com/components/#glyphicons">Glyphicons</a> and <a href="http://fontawesome.io/icons/">FontAwesome</a> examples.<br>
+				</small>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="dashboard-item">
+						<i class="dashboard-icon glyphicon glyphicon-dashboard"></i>
+						<h2 class="dashboard-title">
+							Short title
+							<a tabindex="0" role="button" data-toggle="popover" class="dashboard-more-info" data-content="The definition for ________ goes right about here and will show in the popover." data-original-title="________ definition">
+								<span class="sr-only">View ________ definition</span>
+							</a>
+						</h2>
+						<span class="dashboard-highlight">
+							<a href="#">
+								<strong>88</strong>k
+							</a>
+						</span>
+						<small class="dashboard-extra">extra information</small>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="dashboard-item">
+						<i class="dashboard-icon fa fa-tachometer"></i>
+						<h2 class="dashboard-title">
+							Page load
+						</h2>
+						<span class="dashboard-highlight">
+							<strong>1.2</strong>s
+						</span>
+						<small class="dashboard-extra">on average</small>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="dashboard-item">
+						<i class="dashboard-icon glyphicon glyphicon-heart-empty"></i>
+						<h2 class="dashboard-title">
+							Glyphicons
+						</h2>
+						<span class="dashboard-highlight">
+							<strong>
+								<a href="#">
+									88
+								</a>
+							</strong>
+						</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 text-center">
+					<div class="dashboard-item">
+						<i class="dashboard-icon fa fa-heart-o"></i>
+						<h2 class="dashboard-title">
+							FontAwesome
+							<a class="dashboard-more-info dashboard-more-info-qmark" tabindex="0" role="button" data-toggle="popover" data-content="The definition for ________ goes right about here and will show in the popover." data-original-title="________ definition">
+								<span class="sr-only">View ________ definition</span>
+							</a>
+						</h2>
+						<span class="dashboard-highlight">
+							<strong>
+								<a href="#">
+									88
+								</a>
+							</strong>
+						</span>
+						<small class="dashboard-extra">no unit link</small>
+					</div>
+				</div>
+			</div>
+
+			<br />
+
+
+
+			<div class="page-header">
+				<h1>Labels</h1>
+			</div>
+			<h1 class="CoT-ignore">
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</h1>
+			<h2>
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</h2>
+			<h3>
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</h3>
+			<h4>
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</h4>
+			<h5>
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</h5>
+			<h6>
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</h6>
+			<p>
+				<span class="label label-default">Default</span>
+				<span class="label label-alpha">Alpha</span>
+				<span class="label label-beta">Beta</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+			</p>
+
+			<h2>As links</h2>
+			<a href="#" class="label label-default">Default</a>
+			<a href="#" class="label label-alpha">Alpha</a>
+			<a href="#" class="label label-beta">Beta</a>
+			<a href="#" class="label label-primary">Primary</a>
+			<a href="#" class="label label-success">Success</a>
+			<a href="#" class="label label-info">Info</a>
+			<a href="#" class="label label-warning">Warning</a>
+			<a href="#" class="label label-danger">Danger</a>
+
+			<h2>Within links</h2>
+			<a href="#">
+				<span class="label label-default">Default</span>
+			</a>
+			<a href="#">
+				<span class="label label-alpha">Alpha</span>
+			</a>
+			<a href="#">
+				<span class="label label-beta">Beta</span>
+			</a>
+			<a href="#">
+				<span class="label label-primary">Primary</span>
+			</a>
+			<a href="#">
+				<span class="label label-success">Success</span>
+			</a>
+			<a href="#">
+				<span class="label label-info">Info</span>
+			</a>
+			<a href="#">
+				<span class="label label-warning">Warning</span>
+			</a>
+			<a href="#">
+				<span class="label label-danger">Danger</span>
+			</a>
+
+
+
+
+			<div class="page-header">
+				<h1>Badges</h1>
+			</div>
+			<p>
+				<a href="#">Inbox <span class="badge">42</span></a>
+			</p>
+			<ul class="nav nav-pills" role="tablist">
+				<li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+			</ul>
+
+
+
+			<div class="page-header">
+				<h1>Navs</h1>
+			</div>
+			<h2>Tabs</h2>
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages</a></li>
+			</ul>
+			<h2>Pills (same as Tabs)</h2>
+			<ul class="nav nav-pills" role="tablist">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages</a></li>
+			</ul>
+			<h2>Stacked</h2>
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+				<li role="presentation" class="active"><a href="#">Home</a></li>
+				<li role="presentation"><a href="#">Profile</a></li>
+				<li role="presentation"><a href="#">Messages</a></li>
+			</ul>
+
+			<div class="page-header">
+				<h1>Breadcrumbs</h1>
+			</div>
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Page</a></li>
+				<li class="active">Sub Page</li>
+			</ul>
+
+			<div class="page-header">
+				<h1>Alerts</h1>
+			</div>
+			<h2>Standard</h2>
+			<div class="alert alert-primary" role="alert">
+				<strong>Heads up!</strong> This alert needs your attention, but it's not important.
+			</div>
+			<div class="alert alert-default" role="alert">
+				<strong>Heads up!</strong> This alert needs your attention, but it's not important.
+			</div>
+			<h2>Status</h2>
+			<div class="alert alert-success" role="alert">
+				<strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Best check yo self, you're not looking too good.
+			</div>
+			<div class="alert alert-danger" role="alert">
+				<strong>Oh snap!</strong> Change a few things up and try submitting again.
+			</div>
+			<h2>Calendar Callout</h2>
+			<small>Non-standard Bootstrap class</small>
+			<!-- http://guides.service.gov.au/design-guide/patterns/callouts/index.html -->
+			<div class="alert alert-calendar" role="alert">
+				<p>The next public holiday is:</p>
+				<time class="calendar-date" datetime="2017-01-01T00:00:00+00:00">Sunday 1 January</time>
+				<span class="calendar-name">New Year's Day</span>
+			</div>
+
+			<div class="page-header">
+				<h1>Contextual colors</h1>
+			</div>
+			<p>Plain paragraph text here.</p>
+			<p class="text-muted">Some muted text here.</p>
+			<p class="text-primary">Some primary text here.</p>
+			<p class="text-success">Some success text here.</p>
+			<p class="text-info">Some info text here.</p>
+			<p class="text-warning">Some warning text here.</p>
+			<p class="text-danger">Some danger text here.</p>
+
+
+			<div class="page-header">
+				<h1>Progress bars</h1>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+				<div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+				<div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+			</div>
+
+
+			<div class="page-header">
+				<h1>List groups</h1>
+			</div>
+			<h2>Inline list</h2>
+			<ul class="list-inline">
+				<li><a href="#">Page item</a></li>
+				<li><a href="#">Page item</a></li>
+				<li><a href="#">Page item</a></li>
+				<li><a href="#">Page item</a></li>
+				<li><a href="#">Page item</a></li>
+			</ul>
+			<h2>Stacked list</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<ul class="list-group">
+						<li class="list-group-item">Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+						<li class="list-group-item">Porta ac consectetur ac</li>
+						<li class="list-group-item">Vestibulum at eros</li>
+						<li class="list-group-item">Cras justo odio</li>
+						<li class="list-group-item">Dapibus ac facilisis in</li>
+						<li class="list-group-item">Morbi leo risus</li>
+					</ul>
+				</div><!-- /.col-sm-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+							Active item
+						</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+						<a href="#" class="list-group-item">Vestibulum at eros</a>
+						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+						<a href="#" class="list-group-item">Morbi leo risus</a>
+						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+					</div>
+				</div><!-- /.col-sm-4 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+							<h4 class="list-group-item-heading">Active list group item heading</h4>
+							<p class="list-group-item-text">Active text. Elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</a>
+					</div>
+				</div><!-- /.col-sm-4 -->
+			</div><!-- /.row -->
+
+			<h2>Progress list</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<ul class="list-group progress-indicator">
+						<li class="list-group-item progress-indicator--done">
+							<h3 class="progress-indicator--heading">Think of a thing</h3>
+							<span class="progress-indicator--status label">Done</span>
+							Just a standard sort of item, nothing fancy here.
+						</li>
+						<li class="list-group-item progress-indicator--done">
+							<h3 class="progress-indicator--heading">Design a thing</h3>
+							<span class="progress-indicator--status label">Done</span>
+							Just a standard sort of item <a href="#">with a link</a>.
+						</li>
+						<li class="list-group-item progress-indicator--active progress-indicator--doing">
+							<h3 class="progress-indicator--heading">Protype a thing</h3>
+							<span class="progress-indicator--status label">Doing</span>
+							Just a standard sort of item
+						</li>
+						<li class="list-group-item">
+							<h3 class="progress-indicator--heading">Built a thing</h3>
+							<span class="progress-indicator--status label">To do</span>
+							Something else that needs to be done
+						</li>
+						<li class="list-group-item">
+							<h3 class="progress-indicator--heading">Something with a stupidly long heading that even <a href="#">contains a link</a></h3>
+							<span class="progress-indicator--status label">To do</span>
+							<a href="#">
+								An item that is a link
+							</a>
+							But may even contain extra long amounts of text that are not even a link too.
+						</li>
+						<li class="list-group-item">
+							<h3 class="progress-indicator--heading"><a href="#">Built a thing</a></h3>
+							<span class="progress-indicator--status label">To do</span>
+							Something else that needs to be done
+						</li>
+					</ul>
+				</div><!-- /.col-sm-4 -->
+			</div><!--/row -->
+
+			<h2>List with icons</h2>
+			<div class="row">
+				<div class="col-sm-6">
+					<ul class="list-group list-group-icon">
+						<li class="list-group-item">
+								<i class="glyphicon glyphicon-cog"></i>
+								List item with icon
+						</li>
+						<li class="list-group-item">
+							<a href="/portfolios/environment-and-energy">
+								<i class="glyphicon glyphicon-fire"></i>
+								Linked list item with icon
+							</a>
+						</li>
+						<li class="list-group-item">
+								<i class="fa fa-rocket"></i>
+								List item with icon and an <a href="#">inline link</a>
+						</li>
+						<li class="list-group-item">
+								<i class="fa fa-user-circle"></i>
+								<h4 class="list-group-item-heading">List item with icon and a heading + text</h4>
+								<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						</li>
+					</ul>
+				</div><!-- /.col-sm-4 -->
+			</div><!--/row -->
+
+			<h2>Repeating word list</h2>
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="list-group">
+						<li class="list-group-item repeat-word">
+							<span>
+								<span>Department of</span>
+								Something not linked
+							</span>
+						</li>
+						<li class="list-group-item repeat-word">
+							<a href="#">
+								<span>Department of</span>
+								Awesome
+							</a>
+						</li>
+						<li class="list-group-item repeat-word">
+							<h3>
+								<a href="#">
+									<span>Minister of</span>
+									Awesomeness
+								</a>
+							</h3>
+							Other text here then some other text here too.
+						</li>
+					</ul>
+				</div><!-- /.col-sm-4 -->
+			</div><!--/row -->
+
+			<h2>Table of contents</h2>
+			<small>Non-standard Bootstrap class</small>
+			<nav class="index-links">
+				<h2>Contents</h2>
+				<ul>
+					<li><a href="#">Page item</a></li>
+					<li><a href="#">Page item</a></li>
+					<li><a href="#">Page item</a></li>
+					<li><a href="#">Page item</a></li>
+					<li><a href="#">Page item</a></li>
+				</ul>
+			</nav>
+
+
+
+			<div class="page-header">
+				<h1>Panels</h1>
+			</div>
+			<h2>
+				Standard
+			</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							<p>
+								Panel content.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+							</p>
+						</div>
+					</div>
+				</div><!-- /.col-md-4 col-sm-6 -->
+			</div><!-- /.row -->
+			<h2>
+				Contextual alternatives
+			</h2>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel primary</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel success</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div><!-- /.col-md-4 col-sm-6 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel info</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel warning</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div><!-- /.col-md-4 col-sm-6 -->
+				<div class="col-md-4 col-sm-6">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel danger</h3>
+						</div>
+						<div class="panel-body">
+							Panel content
+						</div>
+					</div>
+				</div><!-- /.col-md-4 col-sm-6 -->
+			</div>
+
+			<h2>Collapsible panel (accordion)</h2>
+			<small>Mainly for use when you <a href="https://userresearch.blog.gov.uk/2015/08/13/no-more-accordions-how-to-choose-a-form-structure/">don't want a good UX</a> <a href="http://baymard.com/blog/accordion-and-tab-design">😛</a></small>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a class="panel-title collapsed" data-toggle="collapse" href="#collapse1">
+							<h1 class="CoT-ignore">Collapsible panel with heading 1</h1>
+						</a>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>
+								Panel body content.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+							</p>
+						</div>
+						<div class="panel-footer">
+							Panel Footer
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a class="panel-title collapsed" data-toggle="collapse" href="#collapse2">
+							<h2>Collapsible panel with Heading 2</h2>
+						</a>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>
+								Panel body content.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+								Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+							</p>
+						</div>
+						<div class="panel-footer">
+							Panel Footer
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a class="panel-title collapsed" data-toggle="collapse" href="#collapse3">
+							<h3>Collapsible panel</h3>
+						</a>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>
+								Panel body content.
+								With a sub-panel
+							</p>
+							<div class="panel-group">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<a class="panel-title collapsed" data-toggle="collapse" href="#collapse3sub">
+											<h3>Collapsible panel with Heading 3</h3>
+										</a>
+									</div>
+									<div id="collapse3sub" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>
+												Panel body content.
+												Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+												Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+												Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+												Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+											</p>
+										</div>
+										<div class="panel-footer">
+											Panel Footer
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							Panel Footer
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="page-header">
+				<h1>Code snippets</h1>
+			</div>
+			<h2>Inline snippet</h2>
+			<p>
+				For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+			</p>
+			<h2>Code block</h2>
+			<pre>Sample code block with a <var>variable</var> in it.</pre>
+			<h2>Sample output</h2>
+			<samp>
+				This text is meant to be treated as sample output from a computer program.
+			</samp>
+			<h2>User input</h2>
+			<p>
+				To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+				To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+			</p>
+			<h2>Wells</h2>
+			<div class="well well-sm">
+				A small well
+			</div>
+			<div class="well">
+				Well, well, well&hellip;
+				<!-- </hilarity> -->
+			</div>
+			<div class="well well-lg">
+				<p>A large well. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+			</div>
+
+
+			<div class="page-header">
+				<h1>Quotes</h1>
+			</div>
+			<h2>Inline</h2>
+			<p>An <q>in-line quote here</q>.</p>
+			<h2>Block</h2>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+			</blockquote>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+				<footer>
+					<cite>with a citation</cite>
+				</footer>
+			</blockquote>
+			<h2>Pull</h2>
+			<blockquote class="pullquote">
+				<p>An editorial block quote (a pull quote).</p>
+			</blockquote>
+			<h2>Other</h2>
+			<blockquote>
+				<p>A block quote containing</p>
+					<blockquote><p>another block quote</p>
+						<footer>
+							<cite>with a citation</cite>
+						</footer>
+					</blockquote>
+			</blockquote>
+
+
+
+			<div class="page-header">
+				<h1>Form elements</h1>
+			</div>
+			<h2>Basic</h2>
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address <span class="optional">(optional)</span></label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputFile">File input/upload</label>
+					<input type="file" id="exampleInputFile">
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<label for="textarea">Text area</label>
+				<textarea id="textarea" name="textarea" class="form-control" rows="3">For a longer,
+multi-line
+response.</textarea>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="option1" checked>
+						Option one is checked
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="option2">
+						Option two is unchecked
+					</label>
+				</div>
+				<div class="checkbox disabled">
+					<label>
+						<input type="checkbox" value="option3" disabled>
+						Option three is disabled
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						Option one is this and that&mdash;be sure to include why it's great
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+						Option two can be something else and selecting it will deselect option one
+					</label>
+				</div>
+				<div class="radio disabled">
+					<label>
+						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+						Option three is disabled
+					</label>
+				</div>
+				<label for="select">Select label</label>
+				<select id="select" class="form-control">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<label for="select-disabled">Disabled select label</label>
+				<select id="select-disabled" class="form-control" disabled>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<label for="multiselect">Multiselect label</label>
+				<select id="multiselect" multiple class="form-control">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<button type="submit" class="btn btn-primary">Primary button</button>
+			</form>
+
+			<h2>Inline</h2>
+			<form class="form-inline">
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputEmail3">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputPassword3">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Remember me
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Primary button</button>
+			</form>
+
+			<h2>Disabled states</h2>
+			<form>
+				<fieldset disabled>
+					<legend>Disabled fieldset</legend>
+					<div class="form-group">
+						<label for="disabledTextInput">Disabled input with placeholder</label>
+						<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input with placeholder">
+					</div>
+					<div class="form-group">
+						<label for="disabledTextInput2">Disabled input with content</label>
+						<input type="text" id="disabledTextInput2" class="form-control" value="Disabled input with content">
+					</div>
+					<div class="form-group">
+						<label for="disabledSelect">Disabled select menu</label>
+						<select id="disabledSelect" class="form-control">
+							<option>Disabled select</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="disabledMultiSelect">Disabled select menu</label>
+						<select id="disabledMultiSelect" multiple class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Can't check this
+						</label>
+					</div>
+					<label for="textarea">Text area</label>
+					<textarea id="textareaDisabled" class="form-control" rows="3">For a longer,
+multi-line
+response.</textarea>
+					<div class="radio">
+						<label>
+							<input type="radio"> Can't choose this
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio"> Can't choose this either
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Disabled primary button</button>
+				</fieldset>
+			</form>
+
+			<h2>Validation states</h2>
+			<small>The validation icons used can use any icon library, but <code>top</code> value may need to be tweaked if not using Glyphicons or Font Awesome.</small>
+			<form>
+				<div class="form-group has-success has-feedback">
+					<label class="control-label" for="inputSuccess1">Input with success</label>
+					<input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+					<span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+					<!-- <span class="form-control-feedback glyphicon glyphicon-ok"></span> -->
+					<span class="form-control-feedback fa fa-check-circle"></span>
+				</div>
+				<div class="form-group has-warning has-feedback">
+					<label class="control-label" for="inputWarning1">Input with warning</label>
+					<input type="text" class="form-control" id="inputWarning1">
+					<!-- <span class="form-control-feedback glyphicon glyphicon-warning-sign"></span> -->
+					<span class="form-control-feedback fa fa-exclamation-circle"></span>
+				</div>
+				<div class="form-group has-error has-feedback">
+					<label class="control-label" for="inputError1">Input with error</label>
+					<input type="text" class="form-control" id="inputError1">
+					<!-- <span class="form-control-feedback glyphicon glyphicon-remove"></span> -->
+					<span class="form-control-feedback fa fa-times-circle"></span>
+				</div>
+				<div class="has-success">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="checkboxSuccess" value="option1">
+							Checkbox with success
+						</label>
+					</div>
+				</div>
+				<div class="has-warning">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="checkboxWarning" value="option1">
+							Checkbox with warning
+						</label>
+					</div>
+				</div>
+				<div class="has-error">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="checkboxError" value="option1">
+							Checkbox with error
+						</label>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Primary button</button>
+			</form>
+			<h2>Input groups</h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<form class="input-group">
+						<input class="form-control" placeholder="Search for&hellip;" type="text" title="Search">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="submit">Go!</button>
+						</span>
+					</form><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			</div><!-- /.row -->
+
+
+			<div class="page-header">
+				<h1>Calendar table</h1>
+				<small>Non-standard Bootstrap class</small>
+			</div>
+			<ul class="calendar-list">
+				<li class="calendar-item calendar-item-past">
+					<time class="calendar-date" datetime="2017-04-14">
+						Thu
+						<span class="calendar-number">13</span>
+						Apr
+					</time>
+					<div class="calendar-title">
+						A Past Event
+						<span class="calendar-note">This is a note about this specific calendar event.</span>
+					</div>
+				</li>
+				<li class="calendar-item">
+					<time class="calendar-date" datetime="2017-04-14">
+						Fri
+						<span class="calendar-number">14</span>
+						Apr
+					</time>
+					<div class="calendar-title">
+						Good Friday
+					</div>
+				</li>
+				<li class="calendar-item">
+					<time class="calendar-date" datetime="2017-04-15">
+						Sat
+						<span class="calendar-number">15</span>
+						Apr
+					</time>
+					<div class="calendar-title">
+						Easter Saturday
+						<span class="calendar-note">This is a note about this specific calendar event.</span>
+					</div>
+				</li>
+				<li class="calendar-item calendar-item-current">
+					<time class="calendar-date" datetime="2017-04-14">
+						Mon
+						<span class="calendar-number">21</span>
+						Sep
+					</time>
+					<div class="calendar-title">
+						A Current Event
+						<span class="calendar-note">This is a note about this specific calendar event.</span>
+					</div>
+				</li>
+				<li class="calendar-item">
+					<time class="calendar-date" datetime="2017-04-15">
+						Sun
+						<span class="calendar-number">25</span>
+						Nov
+					</time>
+					<div class="calendar-title">
+						Another Event
+						<span class="calendar-note">This is a note about this specific calendar event.</span>
+					</div>
+				</li>
+			</ul>
+
+
+			<div class="page-header">
+				<h1>Pagination</h1>
+			</div>
+			<nav aria-label="Page navigation">
+				<ul class="pagination">
+					<li class="disabled">
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+							First
+						</a>
+					</li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							Last
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-header">
+				<h1>Pager</h1>
+			</div>
+			<nav aria-label="__">
+				<ul class="pager">
+					<li><a href="#">Previous</a></li>
+					<li><a href="#">Next</a></li>
+				</ul>
+			</nav>
+
+
+			<div class="page-header">
+				<h1>Carousel/Slider</h1>
+				<small>Just don&apos;t. <a href="http://shouldiuseacarousel.com/">Read this</a>, and continue not using this.</small>
+			</div>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="https://placeholdit.imgix.net/~text?txtsize=78&txtclr=efefef&txt=First+slide&w=1140&h=500&txttrack=0" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="https://placeholdit.imgix.net/~text?txtsize=78&txtclr=efefef&txt=Second+slide&w=1140&h=500&txttrack=0" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="https://placeholdit.imgix.net/~text?txtsize=78&txtclr=efefef&txt=Third+slide&w=1140&h=500&txttrack=0" alt="Third slide">
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div> <!-- /container -->
+
+
+		<footer>
+			<h1 class="sr-only">Footer links</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h2>Title header</h2>
+						<ul class="list-unstyled">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#" rel="external">This is a footer external link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="./img/coas.svg" alt="Australian Government Coat of Arms" width="163" />
+					</div>
+					<div class="col-md-9">
+						<ul class="list-inline">
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+							<li><a href="#">This is a footer link</a></li>
+						</ul>
+						<small>
+							&copy; Commonwealth of Australia
+						</small>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Just for this demo: -->
+		<script src="./js/demo.min.js"></script>
+	</body>
+</html>

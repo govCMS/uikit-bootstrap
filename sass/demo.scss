@@ -1,0 +1,135 @@
+// ⚠️ These styles are just for the demo pages - you don't need them
+
+// Variables
+@import 'vars';
+
+// Mixins
+@import 'mixins';
+
+
+// Styles for the demo page
+body > .container {
+	& > .nav-tabs,
+	& > .nav-pills {
+		margin: 3.2em 0;
+	}
+}
+
+p > .btn {
+	margin: 10px 0;
+}
+
+h1 .label {
+	line-height: 2.5em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	.label {
+		line-height: 2.5em;
+	}
+}
+
+.thumbnail img {
+	display: block;
+	height: 200px;
+	width: 100%;
+}
+
+// .media {
+//	 img {
+//		 width: 64px;
+//		 height: 64px;
+//	 }
+// }
+
+.img-circle {
+	margin: 0 2em;
+}
+
+.coloured-background {
+	background-color: $grey-light;
+	margin-top: 1em;
+	padding-bottom: 2em;
+	.row > div {
+		&:nth-of-type(1) .thumbnail img {
+			filter: sepia(90%) hue-rotate(10deg) saturate(4);
+		}
+		&:nth-of-type(2) .thumbnail img {
+			filter: sepia(90%) hue-rotate(100deg) saturate(4);
+		}
+	}
+	.page-header {
+		margin: 0;
+	}
+}
+
+.demo-ToC {
+	// margin-top: 1em;
+	h1 {
+		margin-bottom: 0.5em;
+	}
+}
+
+// 404 page
+.page-404 {
+	.try-search {
+		margin-top: 2em;
+		min-height: calc( 100vh - 62.9em ); // make it full screen
+	}
+}
+
+
+
+// Add a bit more space before the page footer
+body > footer {
+	margin-top: 5.5em;
+}
+
+
+
+// For the anchor jump with flash animation
+.anchorHighlight {
+	-moz-animation: flash 2s ease-out;
+	-moz-animation-iteration-count: 1;
+	-ms-animation: flash 2s ease-out;
+	-ms-animation-iteration-count: 1;
+	-webkit-animation: flash 2s ease-out;
+	-webkit-animation-iteration-count: 1;
+}
+// @-webkit-keyframes flash {
+//	 0% { background-color:none;}
+//	 50% { background-color:$primary-highlight;}
+//	 100% {background-color:none;}
+// }
+// @-moz-keyframes flash {
+//	 0% { background-color:none;}
+//	 50% { background-color:$primary-highlight;}
+//	 100% {background-color:none;}
+// }
+// @-ms-keyframes flash {
+//	 0% { background-color:none;}
+//	 50% { background-color:$primary-highlight;}
+//	 100% {background-color:none;}
+// }
+@-webkit-keyframes flash {
+	0% { color:$grey-dark;}
+	50% {border-bottom-color:$primary-highlight; color:$primary-highlight;}
+	75% {border-bottom-color:$grey-border; color:$primary-highlight;}
+	100% {border-bottom-color:$grey-border;color:$grey-dark;}
+}
+@-moz-keyframes flash {
+	0% { color:$grey-dark;}
+	50% {border-bottom-color:$primary-highlight; color:$primary-highlight;}
+	75% {border-bottom-color:$grey-border; color:$primary-highlight;}
+	100% {border-bottom-color:$grey-border;color:$grey-dark;}
+}
+@-ms-keyframes flash {
+	0% { color:$grey-dark;}
+	50% {border-bottom-color:$primary-highlight; color:$primary-highlight;}
+	75% {border-bottom-color:$grey-border; color:$primary-highlight;}
+	100% {border-bottom-color:$grey-border;color:$grey-dark;}
+}
