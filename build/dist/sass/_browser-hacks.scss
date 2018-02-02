@@ -1,0 +1,20 @@
+// Browser specific styles
+// Avoid when possible.
+
+@media all and (-ms-high-contrast:none) {
+	.brand a::before, .brand a::after { background: transparent !important; } /* IE10 */
+	.brand, .brand a img { margin-top: 0; } /* IE10 */
+	*::-ms-backdrop, .brand a::before, .brand a::after { background: transparent !important; } /* IE11 */
+	*::-ms-backdrop, .brand, .brand a img { margin-top: 0; } /* IE11 */
+}
+@supports (-ms-ime-align:auto) {
+	.brand a::before, .brand a::after { background: transparent !important; } /* edge */
+	.brand, .brand a img { margin-top: 0; } /* edge */
+}
+
+
+// For iPhone X.
+.container .row {
+	padding-left: constant(safe-area-inset-left);
+	padding-right: constant(safe-area-inset-right);
+}

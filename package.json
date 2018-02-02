@@ -1,0 +1,31 @@
+{
+  "name": "uikit-bootstrap",
+  "version": "1.0.0",
+  "description": "DTA UI-Kit Bootstrap Theme",
+  "repository": "git@github.com:govCMS/uikit-bootstrap.git",
+  "author": "Joseph Zhao <joseph.zhao@xing.net.au>",
+  "license": "ISC",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "development": "gulp",
+    "prod": "gulp",
+    "production": "gulp",
+    "watch": "gulp watch",
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "beeper": "^1.1.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss-import": "^11.0.0"
+  }
+}
